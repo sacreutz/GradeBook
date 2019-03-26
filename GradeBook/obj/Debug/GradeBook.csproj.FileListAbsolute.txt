@@ -1,0 +1,6 @@
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\GradeBook\bin\Debug\GradeBook.exe.config
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\GradeBook\bin\Debug\GradeBook.exe
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\GradeBook\bin\Debug\GradeBook.pdb
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\GradeBook\obj\Debug\GradeBook.csprojResolveAssemblyReference.cache
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\GradeBook\obj\Debug\GradeBook.exe
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\GradeBook\obj\Debug\GradeBook.pdb

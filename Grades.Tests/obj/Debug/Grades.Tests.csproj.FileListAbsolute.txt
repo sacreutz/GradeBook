@@ -1,0 +1,7 @@
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\Grades.Tests\bin\Debug\Grades.Tests.dll
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\Grades.Tests\bin\Debug\Grades.Tests.pdb
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\Grades.Tests\obj\Debug\Grades.Tests.csprojResolveAssemblyReference.cache
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\Grades.Tests\obj\Debug\Grades.Tests.dll
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\Grades.Tests\obj\Debug\Grades.Tests.pdb
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\Grades.Tests\bin\Debug\GradeBook.exe
+C:\Users\screutz\Documents\Visual Studio 2013\Projects\GradeBook\Grades.Tests\bin\Debug\GradeBook.pdb
