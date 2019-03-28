@@ -7,7 +7,7 @@
     <ProjectGuid>{018E1E21-9831-41D3-A3AE-E2B0B8186C15}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <RootNamespace>Grades</RootNamespace>
     <AssemblyName>GradeBook</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="GradeStatistics.cs" />
     <Compile Include="GradeBook.cs" />
+    <Compile Include="NameChangedDelegate.cs" />
+    <Compile Include="NameChangedEventArgs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
