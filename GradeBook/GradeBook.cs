@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,32 +12,43 @@ namespace Grades
 
         public GradeBook(string name = "There is no name")
         {
+            Console.WriteLine("gradebook ctor");
             _name = name;
-            grades = new List<float>();
+            _grades = new List<float>();
         }
 
         public void AddGrade(float grade)
         {
             if (grade >= 0 && grade <= 100)
             {
-                grades.Add(grade);
+                _grades.Add(grade);
             }
         }
 
-        public GradeStatistics ComputeStatistics()
+        public void WriteGrades(TextWriter textWriter)
+        {
+            textWriter.WriteLine("Grades:");
+            foreach (float grade in _grades)
+            {
+                textWriter.WriteLine(grade);
+            }
+            textWriter.WriteLine("********");
+        }
+
+        public virtual GradeStatistics ComputeStatistics()
         {
            GradeStatistics stats = new GradeStatistics();
          
            float sum = 0f;
 
-            foreach (float grade in grades)
+            foreach (float grade in _grades)
             {
                 stats.HighestGrade = Math.Max(grade, stats.HighestGrade);
                 stats.LowestGrade = Math.Min(grade, stats.LowestGrade); 
                 sum += grade; 
             }
 
-            stats.AverageGrade = sum / grades.Count; 
+            stats.AverageGrade = sum / _grades.Count; 
 
            return stats;
         }
@@ -51,7 +63,10 @@ namespace Grades
             }
             set
             {
-                if(!String.IsNullOrEmpty(value))
+                if(String.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentException("Name cannot be null or empty");
+                }
                 {
                     var oldValue = _name;
                     _name = value;
@@ -68,6 +83,8 @@ namespace Grades
 
         public event NameChangedDelegate NameChanged; 
 
-        private List<float> grades;
+        protected List<float> _grades;
+
+     
     }
 }
